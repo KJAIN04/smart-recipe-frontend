@@ -12,7 +12,7 @@ export default function Home() {
     if (!ingredients) return;
     setLoading(true);
     try {
-      const response = await axios.get(`${backendUrl}/api/recipes`, {
+      const response = await axios.get(${backendUrl}/api/recipes, {
         params: { ingredients },
       });
       setRecipes(response.data);
