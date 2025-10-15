@@ -1,6 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
-import RecipeCard from "../components/RecipeCard";
+import RecipeCard from "../Components/RecipeCard";
 const backendUrl=import.meta.env.VITE_BACKEND_URL;
 
 export default function Home() {
