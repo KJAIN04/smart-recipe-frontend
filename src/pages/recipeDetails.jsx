@@ -11,7 +11,7 @@ export default function RecipeDetails() {
     const fetchRecipe = async () => {
       try {
         // Backend endpoint to get recipe by ID
-        const response = await axios.get(${backendUrl}/api/recipes/${id});
+        const response = await axios.get(`${backendUrl}/api/recipes/${id}`);
         setRecipe(response.data);
       } catch (error) {
         console.error(error);
